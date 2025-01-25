@@ -2499,9 +2499,9 @@ padding-top: 55px;
   }
 }
 
-.banner-right {
+/* .banner-right {
   text-align: center;
-}
+} */
 
 @media (max-width: 991px) {
   .banner-right {
@@ -2511,11 +2511,22 @@ padding-top: 55px;
 
 @media (max-width: 767px) {
   .banner-right {
-    width: 70%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
+}
+
+.responsive-image {
+  display: block; /* Ensures the image behaves like a block element */
+  max-width: 100%; /* Ensures the image scales down to fit its container */
+  height: auto; /* Maintains the aspect ratio */
+  margin: 0 auto; /* Centers the image horizontally, optional */
+}
+
+.justify-text {
+  text-align: justify;
 }
 
 /*-------- End Banner Area ------------*/
@@ -4618,6 +4629,27 @@ border-top: 2px solid #01092f;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+@media (max-width: 767px) {
+  .col-sm-2x {
+    flex: 0 0 100%; /* Adjusts the flex-basis to 75% */
+    max-width: 100%; /* Limits the width to 75% */
+    margin-left: auto; /* Centers the element horizontally */
+    margin-right: auto;
+    padding-right: 10px; /* Adjusts padding for better spacing */
+    padding-left: 10px;
+  }
+}
+
+.row-publications {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .row-publications {
+    width: 60%;
+  }
 }
 
 .home-about-right .primary-btn  {
