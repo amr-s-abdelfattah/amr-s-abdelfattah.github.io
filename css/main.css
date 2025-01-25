@@ -48,6 +48,12 @@ $black			: #222;
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
+
+body, html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 ::-moz-selection {
   /* Code for Firefox */
   background-color: #8490ff;
