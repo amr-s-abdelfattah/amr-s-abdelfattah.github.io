@@ -2468,7 +2468,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7004606', e
   /* height: 750px !important; */
   height: calc(100vh - 270px);
   min-height: 480px !important;
-padding-top: 55px;
+  padding-top: 55px;
+}
+
+@media (max-width: 767px) {
+  .banner-area .fullscreen {
+    height: calc(100vh + 90px);
+    min-height: 480px !important;
+    padding-top: 55px;
+  }
 }
 
 .banner-left h6 {
@@ -2511,10 +2519,10 @@ padding-top: 55px;
 
 @media (max-width: 767px) {
   .banner-right {
-    width: 50%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    /* display: block; */
   }
 }
 
@@ -2607,9 +2615,10 @@ padding-top: 55px;
   text-align: center;
 }
 
-.single-fact h1, .single-fact p {
+.single-fact h1, .single-fact h2, .single-fact p {
   color: #fff;
 }
+
 
 .single-fact h1 {
   font-weight: 700;
